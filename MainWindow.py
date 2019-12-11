@@ -64,12 +64,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.ssd = SSD_test(weight_path='./ssd/weights/weights_SSD300.hdf5', class_nam_list=self.obj_names)
 
 
-        # 摄像头索引号或者视频文件路径
-        # self.camera_index = 0
-        self.camera_index = './Voc_test.avi'
+        # 视频文件路径
+        self.camera_index = None
         self.FPS = None
-        # 主循环flg
-        self.video_flg = True
 
         # 初始化计时器
         self.timer = QTimer(self)               # 更新计时器
