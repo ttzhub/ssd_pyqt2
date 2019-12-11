@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'E:\Python Space\ssd_pyqt2\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\PythonSpace\ssd_pyqt2\MainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.10.1
 #
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(851, 624)
+        MainWindow.resize(902, 624)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.label_imgshow = QtWidgets.QLabel(self.centralWidget)
@@ -24,24 +24,24 @@ class Ui_MainWindow(object):
         self.label_imgshow.setText("")
         self.label_imgshow.setObjectName("label_imgshow")
         self.pushButton_start = QtWidgets.QPushButton(self.centralWidget)
-        self.pushButton_start.setGeometry(QtCore.QRect(740, 160, 101, 31))
+        self.pushButton_start.setGeometry(QtCore.QRect(740, 160, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Agency FB")
         font.setPointSize(11)
         self.pushButton_start.setFont(font)
         self.pushButton_start.setObjectName("pushButton_start")
         self.pushButton_end = QtWidgets.QPushButton(self.centralWidget)
-        self.pushButton_end.setGeometry(QtCore.QRect(740, 290, 101, 31))
+        self.pushButton_end.setGeometry(QtCore.QRect(740, 290, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Agency FB")
         font.setPointSize(11)
         self.pushButton_end.setFont(font)
         self.pushButton_end.setObjectName("pushButton_end")
         self.textEdit = QtWidgets.QTextEdit(self.centralWidget)
-        self.textEdit.setGeometry(QtCore.QRect(10, 500, 831, 111))
+        self.textEdit.setGeometry(QtCore.QRect(10, 500, 881, 111))
         self.textEdit.setObjectName("textEdit")
         self.pushButton_open = QtWidgets.QPushButton(self.centralWidget)
-        self.pushButton_open.setGeometry(QtCore.QRect(740, 50, 101, 31))
+        self.pushButton_open.setGeometry(QtCore.QRect(740, 50, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Agency FB")
         font.setPointSize(11)

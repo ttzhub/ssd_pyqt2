@@ -123,6 +123,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.cap.isOpened():
             # 读取图像
             ret, self.img_scr = self.cap.read()
+            # 视频读取完毕
+            if not ret:
+                # 计时器停止计时
+                self.timer.stop()
+                # 对话框提示
+                QMessageBox.information(self, '播放提示', '视频已播放完毕！')
+                # 释放摄像头
+                if hasattr(self, 'cap'):
+                    self.cap.release()
+                    del self.cap
+                # 释放‘开始’按钮
+                self.pushButton_start.setEnabled(True)
 
             # 预处理图片
             # 转为RGB
